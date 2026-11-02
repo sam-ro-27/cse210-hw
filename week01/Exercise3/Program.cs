@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        // Prompt the user for parts 1 or 2, where the user specified the number...
+        // Prompt the user for parts 1 or 2, where the user for the magic number...
         // console.write("What is the magic number? ");
         //int magicNumber = int.Parse(Console.ReadLine());
 
@@ -18,7 +18,6 @@ class Program
         while (true)
         {
             Console.Write("Enter a number between 1 and 100: ");
-            50
             string input = Console.ReadLine() ?? "";
 
             if (!int.TryParse(input, out int guess) || guess < 1 || guess > 100)
