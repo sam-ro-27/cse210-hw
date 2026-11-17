@@ -25,7 +25,8 @@ public class Scripture
         }
 
 
-        while (hiddenCount < count && hiddenCount < _words.Count)
+        while (hiddenCount < count && !IsCompletelyHidden())
+
         {
             int index = random.Next(_words.Count);
             if (!_words[index].IsHidden())
